@@ -80,7 +80,7 @@ function deleteBook(bookId)
 {
     let book = {  "id" : bookId, "name" : document.getElementById("name").value, "author" : document.getElementById("author").value, "isbn" : document.getElementById("isbn").value }
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "/restwithjersey/api/book/remove", true);
+    xhttp.open("DELETE", "/restwithjersey/api/book/remove", true);
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState>3 && xhttp.status==200) { loadBookList(); }
     };

@@ -5,67 +5,36 @@
     <title>Library Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>startpage</title>
+</head>
+
 <body>
-<div>BookList:</div>
-<div id="bookData" style="float: left;"></div>
-<br>
-<br>
-<br>
-<div>Add new Book</div>
 
-<script>
-    loadBookList();
+<div class="w3-container w3-half w3-margin-top">
 
-    function loadBookList() {
-        let BOOK_URL = "http://localhost:7070/restwithjersey/api/book/list";
+        <p>
+            <input id="bookId" class="w3-input" type="hidden" style="width:90%">
+        </p>
 
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                let bookDataList = JSON.parse(this.responseText);
-                let bookList = "";
-                for (let index = 0; index < bookDataList.length; index++) {
-                    bookList +=
-                        "<hr>" +
-                        "Name: " + bookDataList[index].name + "<br/>" +
-                        "Author: " + bookDataList[index].author + "<br/>" +
-                        "Isbn: " + bookDataList[index].isbn + "<br/>"
-                }
-                document.getElementById("bookData").innerHTML = bookList;
-            }
-        };
-        xhttp.open("GET", BOOK_URL, true);
-        xhttp.send();
-    }
+        <p>
+            <input id="name" class="w3-input" type="text" style="width:90%" required>
+            <label>Title</label></p>
+        <p>
+            <input id="author" class="w3-input" type="text" style="width:90%" required>
+            <label>Author</label></p>
+        <p>
+            <input id="isbn" class="w3-input" type="text" style="width:90%" required>
+            <label>ISBN</label></p>
+        <p>
+            <button id="btnSaveBook" onclick="saveBook()" class="w3-button w3-section w3-teal w3-ripple"> Add Book </button></p>
 
-    //POST EXAMPLE
-    function postAjax(url, data, success) {
-        var params = typeof data == 'string' ? data : Object.keys(data).map(
-            function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
-        ).join('&');
+</div>
 
-        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-        xhr.open('POST', url);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState>3 && xhr.status==200) { success(xhr.responseText); }
-        };
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send(params);
-        return xhr;
-    }
+<div id="bookData" class="w3-container">
 
-    // example request with data object
-    let book = { 'id': null, 'name': 'new title', 'author': 'new author', 'isbn':'new isbn' }
-    postAjax('http://localhost:7070/restwithjersey/api/book/add'
-        , book
-        , function(response){
-        console.log(response);
-        alert(response);
-    }
-        );
-</script>
-
+</div>
+<script src="./app.js"></script>
 </body>
 </html>

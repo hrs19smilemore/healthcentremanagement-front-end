@@ -22,17 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/restwithjersey_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/restwithjersey_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="controller aangepast">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restwithjersey.iml" beforeDir="false" afterPath="$PROJECT_DIR$/restwithjersey.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sr/unasat/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sr/unasat/library/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT.war" afterDir="false" />
@@ -41,8 +36,6 @@
       <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/service/BookService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-09" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-10" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-16" beforeDir="false" />
@@ -81,6 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -130,6 +124,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,8 +238,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518229614966</updated>
-      <workItem from="1614118657293" duration="938000" />
+      <workItem from="1614118657293" duration="2312000" />
     </task>
+    <task id="LOCAL-00001" summary="controller aangepast">
+      <created>1614119709100</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614119709100</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,43 +264,51 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="controller aangepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller aangepast" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="295" width="1092" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614119578484">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="295" width="1092" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119578484" />
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom" timestamp="1614119454171">
+    <state width="1877" height="340" key="GridCell.Tab.0.bottom" timestamp="1614120195565">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119454171" />
-    <state width="1877" height="340" key="GridCell.Tab.0.center" timestamp="1614119454170">
+    <state width="1877" height="340" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195565" />
+    <state width="1877" height="340" key="GridCell.Tab.0.center" timestamp="1614120195565">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119454170" />
-    <state width="1877" height="340" key="GridCell.Tab.0.left" timestamp="1614119454170">
+    <state width="1877" height="340" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195565" />
+    <state width="1877" height="340" key="GridCell.Tab.0.left" timestamp="1614120195565">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119454170" />
-    <state width="1877" height="340" key="GridCell.Tab.0.right" timestamp="1614119454170">
+    <state width="1877" height="340" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195565" />
+    <state width="1877" height="340" key="GridCell.Tab.0.right" timestamp="1614120195565">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119454170" />
-    <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1614119453885">
+    <state width="1877" height="340" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195565" />
+    <state width="1877" height="340" key="GridCell.Tab.1.bottom" timestamp="1614120195333">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119453885" />
-    <state width="1877" height="340" key="GridCell.Tab.1.center" timestamp="1614119453885">
+    <state width="1877" height="340" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195333" />
+    <state width="1877" height="340" key="GridCell.Tab.1.center" timestamp="1614120195333">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119453885" />
-    <state width="1877" height="340" key="GridCell.Tab.1.left" timestamp="1614119453884">
+    <state width="1877" height="340" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195333" />
+    <state width="1877" height="340" key="GridCell.Tab.1.left" timestamp="1614120195333">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119453884" />
-    <state width="1877" height="340" key="GridCell.Tab.1.right" timestamp="1614119453885">
+    <state width="1877" height="340" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195333" />
+    <state width="1877" height="340" key="GridCell.Tab.1.right" timestamp="1614120195333">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="340" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119453885" />
+    <state width="1877" height="340" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614120195333" />
+    <state x="2472" y="249" key="Vcs.Push.Dialog.v2" timestamp="1614119717722">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="249" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614119717722" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614119168518">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
