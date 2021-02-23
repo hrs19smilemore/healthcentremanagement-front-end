@@ -35,7 +35,7 @@ public class BookController {
     }
 
     @Path("/remove")
-    @POST
+    @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Book remove(Book book) {
