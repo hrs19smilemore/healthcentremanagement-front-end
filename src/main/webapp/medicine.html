@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascript/medicineCrud.js"></script>
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="medicine.html">Medicine</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="patient.html">Patient</a>
+    </div>
+</header>
+<div class="w3-container w3-half w3-margin-top">
+
+    <p>
+        <input id="medicineId" class="w3-input" type="hidden" style="width:90%">
+    </p>
+
+    <p>
+        <input id="name" class="w3-input" type="text" style="width:90%" required>
+        <label>Name</label></p>
+    <p>
+        <input id="brand" class="w3-input" type="text" style="width:90%" required>
+        <label>Brand</label></p>
+    <p>
+        <input id="description" class="w3-input" type="text" style="width:90%" required>
+        <label>Description</label></p>
+    <p>
+        <input id="stock" class="w3-input" type="number" style="width:90%" required>
+        <label>Stock</label></p>
+    <p>
+        <button id="btnSaveMedicine" onclick="saveMedicine()" class="btn-custom"> Add Medicine </button></p>
+
+</div>
+
+<div id="medicineData" class="w3-container">
+
+</div>
+<script>
+    clearInputFields();
+    loadMedicineList();
+</script>
+</body>
+</html>

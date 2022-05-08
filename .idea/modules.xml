@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/restwithjersey.iml" filepath="$PROJECT_DIR$/restwithjersey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/healthcentremanagement-front-end.iml" filepath="$PROJECT_DIR$/healthcentremanagement-front-end.iml" />
     </modules>
   </component>
 </project>

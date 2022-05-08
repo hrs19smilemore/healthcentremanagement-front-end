@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="javascript/patientReport.js"></script>
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="patient.html">Patient</a>
+    </div>
+</header>
+<div style="background-color: #009879">
+<br><h2 style="text-align: center">Overview</h2>
+</div>
+<div id="container">
+    <label style="font-family: sans-serif">PatientId</label><br>
+    <input id="patientId" type="text" class="input"><br>
+    <button id="search">Search</button>
+
+    <h3>Patient Info</h3>
+    <table id="patientInfo" class="styled-table">
+        <thead>
+        <tr>
+            <th>Id-number</th>
+            <th>Sex</th>
+            <th>Address</th>
+            <th>Contact-number</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="row">
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Prescriptions</h3>
+    <table id="prescriptions" class="styled-table">
+        <thead>
+        <tr>
+            <th>Dose</th>
+            <th>Prescription_date</th>
+            <th>Medicine name</th>
+            <th>Medicine brand</th>
+        </tr>
+        </thead>
+        <tbody id="list">
+        </tbody>
+    </table>
+    <script>getPatientInfo()</script>
+</div>
+
+
+</body>
+</html>

@@ -2,39 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Library Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Healthcentre</title>
     <title>startpage</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
-
 <body>
+<header>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="patient.html">Patient</a>
+    </div>
+</header>
+<main>
 
-<div class="w3-container w3-half w3-margin-top">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <image width="100%" xlink:href="https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg" ></image>
+                </svg>
 
-        <p>
-            <input id="bookId" class="w3-input" type="hidden" style="width:90%">
-        </p>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Welcome!</h1>
+                        <p>-healthcentremanagement</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <image width="100%" xlink:href="https://www.chasecountyhospital.com/assets/templates/site/images/header-bg.jpg" ></image>
+                </svg>
 
-        <p>
-            <input id="name" class="w3-input" type="text" style="width:90%" required>
-            <label>Title</label></p>
-        <p>
-            <input id="author" class="w3-input" type="text" style="width:90%" required>
-            <label>Author</label></p>
-        <p>
-            <input id="isbn" class="w3-input" type="text" style="width:90%" required>
-            <label>ISBN</label></p>
-        <p>
-            <button id="btnSaveBook" onclick="saveBook()" class="w3-button w3-section w3-teal w3-ripple"> Add Book </button></p>
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <h1>Take care of the patient and everything else will follow</h1>
+                        <p>-Thomas Frist, M.D.</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <image width="100%"  xlink:href="https://wallpaperaccess.com/full/185899.jpg" ></image>
+                </svg>
 
-</div>
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1 >I believe health is a civil right</h1>
+                        <p>-Dennis Kucinich</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-<div id="bookData" class="w3-container">
+    <div class="container marketing">
 
-</div>
-<script src="./app.js"></script>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    <image width="200" height="150" xlink:href="https://sanchetihospital.org/wp-content/uploads/2018/07/Pain-Medicine-img-02.jpg" />
+                </svg>
+
+                <h2>MedicineReport</h2>
+                <p>Report of medicine start supply and current supply grouped by their name and brand.</p>
+                <p><a class="btn btn-secondary" href="MedicineRapport.html">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    <image width="140" height="140" xlink:href="https://preview.pixlr.com/images/800wm/100/1/100149666.jpg" />
+                </svg>
+
+                <h2>PatientReport</h2>
+                <p>All information regarding a patient based on their id number.</p>
+                <p><a class="btn btn-secondary" href="PatientInfo.html">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    <image width="140" height="140" xlink:href="https://icon-library.com/images/prescription-icon/prescription-icon-24.jpg" />
+                </svg>
+
+                <h2>PrescriptionReport</h2>
+                <p>Prescription report based on prescriptions yearly, biyearly and quarterly grouped by medicine.</p>
+                <p><a class="btn btn-secondary" href="prescriptionsRapport.html">View details &raquo;</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <!--<p class="float-end"><a href="#">Back to top</a></p>-->
+        <p>&copy; 2022 Company, Inc.</p>
+    </footer>
+</main>
+<script src="javascript/app.js"></script>
 </body>
 </html>
+
+
+
+
+

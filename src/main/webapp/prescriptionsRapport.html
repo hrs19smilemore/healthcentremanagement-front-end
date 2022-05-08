@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescriptions</title>
+    <script src="javascript/prescriptionReport.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> <!--style="background-image: url('https://www.verywellhealth.com/thmb/mWg52pDLKa0TssHl0Vls7h3U3HU=/3870x2177/smart/filters:no_upscale()/prescription-56ad9f2a5f9b58b7d00b43f8.jpg')"-->
+<header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="patient.html">Patient</a>
+    </div>
+</header>
+
+
+<div id = "extra" class="prescriptionTop">
+    <br><h1>Prescriptions</h1>
+<h1 id="h1"></h1><br>
+<label for="year"></label>
+<select id="year" style="font-size: 18px"></select><br><br>
+</div>
+
+<div id="prescriptionReport">
+    <script>
+        selectYear();
+        getPrescriptions();
+    </script>
+</div>
+
+</body>
+</html>

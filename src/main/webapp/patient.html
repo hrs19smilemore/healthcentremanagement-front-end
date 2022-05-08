@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascript/patientCrud.js"></script>
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="prescription.html">Prescription</a>
+        <a class="active" href="patient.html">Patient</a>
+    </div>
+</header>
+
+
+<div class="w3-container w3-half w3-margin-top">
+
+    <p>
+        <input id="patientId" class="w3-input" type="hidden" style="width:90%">
+    </p>
+
+    <p>
+        <input id="address" class="w3-input" type="text" style="width:90%" required>
+        <label>Address</label></p>
+    <p>
+        <input id="contactNumber" class="w3-input" type="text" style="width:90%" required>
+        <label>Contactnumber</label></p>
+    <p>
+        <input id="firstName" class="w3-input" type="text" style="width:90%" required>
+        <label>Firstname</label></p>
+    <p>
+        <input id="lastName" class="w3-input" type="text" style="width:90%" required>
+        <label>Lastname</label></p>
+    <p>
+        <input id="idNumber" class="w3-input" type="text" style="width:90%" required>
+        <label>Id number</label></p>
+    <p>
+        <input id="sex" class="w3-input" type="text" style="width:90%" required>
+        <label>Sex</label></p>
+    <p>
+        <button id="btnSavePatient" onclick="savePatient()" class="btn-custom"> Add Patient </button></p>
+
+</div>
+
+<div id="patientData" class="w3-container">
+</div>
+<script>
+    clearInputFields();
+    loadPatientList();
+</script>
+</body>
+</html>

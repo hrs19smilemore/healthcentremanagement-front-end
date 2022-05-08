@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascript/prescriptionCrud.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+        <a class="active" href="prescription.html">Prescription</a>
+        <a href="patient.html">Patient</a>
+    </div>
+</header>
+<div class="w3-container w3-half w3-margin-top">
+
+    <p>
+        <input id="prescriptionId" class="w3-input" type="hidden" style="width:90%">
+    </p>
+
+    <p>
+        <input id="dose" class="w3-input" type="number" style="width:90%" required>
+        <label>Dose</label></p>
+    <p>
+        <input id="prescriptionDate" class="w3-input" type="date" style="width:90%" required>
+        <label>Prescription date</label></p>
+    <p>
+        <input id="medicineName" class="w3-input" type="text" style="width:90%" required>
+        <label>Medicine name prescribed</label></p>
+    <p>
+        <input id="medicineBrand" class="w3-input" type="text" style="width:90%" required>
+        <label>Medicine brand prescribed</label></p>
+    <p>
+        <input id="idNumber" class="w3-input" type="text" style="width:90%" required>
+        <label>Patient id number</label></p>
+    <p>
+
+        <button id="btnSavePrescription" onclick="savePrescription()" class="btn-custom"> Add Prescription </button></p>
+
+</div>
+
+<div id="prescriptionData" class="w3-container">
+
+</div>
+<script>
+    clearInputFields();
+    loadPrescriptionList();
+</script>
+</body>
+</html>

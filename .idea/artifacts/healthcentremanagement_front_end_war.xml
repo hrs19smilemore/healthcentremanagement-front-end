@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="healthcentremanagement-front-end:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>healthcentremanagement-front-end</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="healthcentremanagement-front-end-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="healthcentremanagement-front-end:war exploded" />
+    </root>
+  </artifact>
+</component>
