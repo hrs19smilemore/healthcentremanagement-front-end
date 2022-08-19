@@ -11,13 +11,18 @@ public class PatientServiceImpl implements PatientInterface {
     PatientDao patientDao = new PatientDao(JPAConfiguration.getEntityManager());
 
     @Override
-    public List<Patient> getAllPatients(){
+    public List<Patient> getAllPatients() {
         return patientDao.retrieveList();
     }
 
     @Override
-    public Patient insertPatient(Patient patient){
-        return patientDao.insert(patient);
+    public Patient insertPatient(Patient patient) {
+        List<Patient> patients = patientDao.getPatientInfo(patient.getIdentification().getNumber());
+        if (patients.isEmpty()) {
+            return patientDao.insert(patient);
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -42,9 +47,8 @@ public class PatientServiceImpl implements PatientInterface {
     @Override
     public Patient findPatient(Patient patient) {
         Patient foundPatient = new Patient(patient.getId());
-        for (int i = 0; i < getAllPatients().size(); i++){
-            if(getAllPatients().get(i).getId() == patient.getId())
-            {
+        for (int i = 0; i < getAllPatients().size(); i++) {
+            if (getAllPatients().get(i).getId() == patient.getId()) {
                 foundPatient = getAllPatients().get(i);
             }
         }

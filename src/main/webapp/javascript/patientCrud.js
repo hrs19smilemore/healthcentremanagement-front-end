@@ -48,9 +48,11 @@ function addPatient() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("POST", "/healthcentremanagement-front-end/api/patient/add", true);
     xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState>3 && xmlhttp.status==200) {
-            loadPatientList(); clearInputFields();}
-    };
+            if (xmlhttp.readyState>3 && xmlhttp.status===204){
+                alert("Patient already exists! Use a different idNumber");
+            } else if (xmlhttp.readyState>3 && xmlhttp.status===200) {
+                loadPatientList(); clearInputFields();
+            }}
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(patient));
 }

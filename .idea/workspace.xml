@@ -27,37 +27,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="v2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/adapter/MedicineAndPatientListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/adapter/MedicineAndPatientListAdapterImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/builders/MedicineBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/DaoInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/MedicineInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/PatientInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/PrescriptionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/template/ConcretePrescriptionTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/template/PrescriptionTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="afgerond">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/TestResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/MedicineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PrescriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/IdentificationDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/MedicineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/MedicineDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PatientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PrescriptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PrescriptionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/IdentificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/MedicineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/MedicineServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/medicineCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/medicineCrud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/patientCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/patientCrud.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionCrud.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/patient.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +102,8 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -446,7 +422,8 @@
       <workItem from="1660863523866" duration="1491000" />
       <workItem from="1660871795791" duration="11140000" />
       <workItem from="1660909393601" duration="1481000" />
-      <workItem from="1660914237812" duration="14758000" />
+      <workItem from="1660914237812" duration="14929000" />
+      <workItem from="1660946071008" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="controller aangepast">
       <created>1614119709100</created>
@@ -462,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652040692198</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="afgerond">
+      <created>1660937500286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660937500286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +466,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="controller aangepast" />
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="afgerond" />
+    <option name="LAST_COMMIT_MESSAGE" value="afgerond" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionServiceImpl.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

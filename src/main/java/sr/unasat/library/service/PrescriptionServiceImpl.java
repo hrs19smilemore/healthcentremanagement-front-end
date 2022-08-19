@@ -67,7 +67,7 @@ public class PrescriptionServiceImpl implements PrescriptionInterface {
         List<Medicine> medicines = medicineAndPatientListAdapter.wildcardToMedicineList();
         List<Patient> patients = medicineAndPatientListAdapter.wildcardToPatientList();
         Prescription p = null;
-        if (medicines.isEmpty() && patients.isEmpty()) {
+        if (medicines.isEmpty() || patients.isEmpty()) {
             return p;
         } else {
             prescription.setMedicine(medicines.get(0));
