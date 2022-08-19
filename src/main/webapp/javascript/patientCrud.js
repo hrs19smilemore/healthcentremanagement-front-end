@@ -92,7 +92,7 @@ function clearInputFields()
 
 function removePatient(patientId)
 {
-    if ( confirm("Are you sure you want to delete this patient, fool?") ) {
+    if ( confirm("Are you sure you want to delete this patient ?") ) {
         deletePatient(patientId);
     }
 }

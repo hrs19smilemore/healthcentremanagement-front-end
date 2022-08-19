@@ -1,20 +1,22 @@
 package sr.unasat.library.dao;
 
 import sr.unasat.library.entity.Patient;
+import sr.unasat.library.interfaces.DaoInterface;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class PatientDao {
+public class PatientDao implements DaoInterface<Patient> {
     private EntityManager entityManager;
 
     public PatientDao(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 
-    public List<Patient> retrievePatientList() {
+    @Override
+    public List<Patient> retrieveList() {
         entityManager.getTransaction().begin();
 
         String jpql = "select p from Patient p";
@@ -24,7 +26,8 @@ public class PatientDao {
         return patientList;
     }
 
-    public Patient insertOneRecord(Patient patient){
+    @Override
+    public Patient insert(Patient patient){
         entityManager.getTransaction().begin();
         entityManager.persist(patient.getIdentification());
         entityManager.persist(patient);
@@ -32,7 +35,8 @@ public class PatientDao {
         return patient;
     }
 
-    public void deleteOneRecord(Patient patient) {
+    @Override
+    public void delete(Patient patient) {
         entityManager.getTransaction().begin();
         String jpql = "select p from Patient p where p.id = :id";
         TypedQuery<Patient> query1 = entityManager.createQuery(jpql, Patient.class);
@@ -46,21 +50,11 @@ public class PatientDao {
                 "where i.number = :identification");
         query3.setParameter("identification", patient1.getIdentification().getNumber());
         query3.executeUpdate();
-        System.out.println("entities deleted: ");
         entityManager.getTransaction().commit();
     }
 
-    public List<Patient> getPatientInfo(String idNumber) {
-        entityManager.getTransaction().begin();
-        String jpql = "select p from Patient p where p.identification.number = :idNumber";
-        TypedQuery<Patient> query = entityManager.createQuery(jpql, Patient.class);
-        query.setParameter("idNumber", idNumber);
-        List<Patient> patientInfoList = query.getResultList();
-        entityManager.getTransaction().commit();
-        return patientInfoList;
-    }
-
-    public void updatePatient(Patient patient) {
+    @Override
+    public void update(Patient patient) {
         entityManager.getTransaction().begin();
         Query query = entityManager.createQuery("UPDATE Patient p SET p.adress = :adress, p.contactnumber = :contactnumber," +
                 " p.firstname = :firstname, p.lastname = :lastname " +
@@ -76,5 +70,17 @@ public class PatientDao {
         query2.setParameter("sex", patient.getIdentification().getSex());
         query2.executeUpdate();
         entityManager.getTransaction().commit();
+    }
+
+    public List<Patient> getPatientInfo(String idNumber) {
+        if (!entityManager.getTransaction().isActive()){
+            entityManager.getTransaction().begin();
+        }
+        String jpql = "select p from Patient p where p.identification.number = :idNumber";
+        TypedQuery<Patient> query = entityManager.createQuery(jpql, Patient.class);
+        query.setParameter("idNumber", idNumber);
+        List<Patient> patientInfoList = query.getResultList();
+        entityManager.getTransaction().commit();
+        return patientInfoList;
     }
 }

@@ -25,7 +25,6 @@ function loadPrescriptionList() {
                     ' <span> Prescription date: ' +  prescriptionDataList[index].prescription_date + '</span> <br>' +
                     ' <span> Medicine name: ' +  prescriptionDataList[index].medicine.name  + ' </span> <br>' +
                     ' <span> Medicine brand: ' +  prescriptionDataList[index].medicine.brand  + ' </span> <br> ' +
-                    //' <span> Patient id number: ' +  prescriptionDataList[index].identification.number  + ' </span> <br> ' +
                     ' </div> ';
             }
             prescriptionList += "</ul>";
@@ -46,8 +45,11 @@ function addPrescription() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("POST", "/healthcentremanagement-front-end/api/prescription/add", true);
     xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState>3 && xmlhttp.status==200) {
-            loadPrescriptionList(); clearInputFields();}
+        if (xmlhttp.readyState>3 && xmlhttp.status===204){
+            alert("Medicine doesn't exist! / Please check name and brand");
+        } else if (xmlhttp.readyState>3 && xmlhttp.status===200) {
+            loadPrescriptionList(); clearInputFields();
+            }
     };
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(prescription));
@@ -90,7 +92,7 @@ function clearInputFields()
 
 function removePrescription(prescriptionId)
 {
-    if ( confirm("Are you sure you want to delete this prescription, fool?") ) {
+    if ( confirm("Are you sure you want to delete this prescription ?") ) {
         deletePrescription(prescriptionId);
     }
 }

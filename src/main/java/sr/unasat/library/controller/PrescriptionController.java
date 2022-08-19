@@ -2,7 +2,7 @@ package sr.unasat.library.controller;
 
 import sr.unasat.library.projections.PrescriptionProjection;
 import sr.unasat.library.entity.Prescription;
-import sr.unasat.library.service.PrescriptionService;
+import sr.unasat.library.service.PrescriptionServiceImpl;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Path("/prescription")
 public class PrescriptionController {
-    private final PrescriptionService prescriptionService = new PrescriptionService();
+    private final PrescriptionServiceImpl prescriptionService = new PrescriptionServiceImpl();
 
     @Path("/list")
     @GET

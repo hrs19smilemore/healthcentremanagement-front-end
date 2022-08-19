@@ -1,7 +1,7 @@
 package sr.unasat.library.controller;
 import sr.unasat.library.projections.MedicineProjection;
 import sr.unasat.library.entity.Medicine;
-import sr.unasat.library.service.MedicineService;
+import sr.unasat.library.service.MedicineServiceImpl;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -9,7 +9,7 @@ import java.util.List;
 
 @Path("medicine")
 public class MedicineController {
-    private final MedicineService medicineService = new MedicineService();
+    private final MedicineServiceImpl medicineService = new MedicineServiceImpl();
 
     @Path("/list")
     @GET
@@ -38,16 +38,16 @@ public class MedicineController {
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Medicine remove(Medicine medicine) {
-        return medicineService.deleteMedicine(medicine);
+    public Medicine remove(int medicineId) {
+        return medicineService.deleteMedicine(medicineId);
     }
 
     @Path("/getMedicine")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Medicine getMedicine(Medicine medicine) {
-        return medicineService.findMedicine(medicine);
+    public Medicine getMedicine(int medicineId) {
+        return medicineService.findMedicine(medicineId);
     }
 
     @Path("/getReport")

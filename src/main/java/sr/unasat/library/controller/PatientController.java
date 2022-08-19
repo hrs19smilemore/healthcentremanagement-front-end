@@ -1,8 +1,7 @@
 package sr.unasat.library.controller;
 
-import sr.unasat.library.entity.Medicine;
 import sr.unasat.library.entity.Patient;
-import sr.unasat.library.service.PatientService;
+import sr.unasat.library.service.PatientServiceImpl;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -10,7 +9,7 @@ import java.util.List;
 
 @Path("patient")
 public class PatientController {
-    private PatientService patientService = new PatientService();
+    private PatientServiceImpl patientService = new PatientServiceImpl();
 
     @Path("/list")
     @GET

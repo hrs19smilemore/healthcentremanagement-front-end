@@ -79,16 +79,13 @@ function clearInputFields()
 
 function removeMedicine(medicineId)
 {
-    if ( confirm("Are you sure you want to delete this medicine, fool?") ) {
+    if ( confirm("Are you sure you want to delete this medicine ?") ) {
         deleteMedicine(medicineId);
     }
 }
 
 function deleteMedicine(medicineId)
 {
-    let medicine = {  "id" : medicineId, "name" : document.getElementById("name").value, "brand" : document.getElementById("brand").value,
-        "description" : document.getElementById("description").value,
-        "stock" : document.getElementById("stock").value }
     var xhttp = new XMLHttpRequest();
     xhttp.open("DELETE", "/healthcentremanagement-front-end/api/medicine/remove", true);
     xhttp.onreadystatechange = function() {
@@ -96,14 +93,11 @@ function deleteMedicine(medicineId)
             loadMedicineList(); }
     };
     xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.send(JSON.stringify(medicine));
+    xhttp.send(JSON.stringify(medicineId));
 }
 
 function getMedicine(medicineId)
 {
-    let medicine = {  "id" : medicineId, "name" : document.getElementById("name").value, "brand" : document.getElementById("brand").value,
-        "description" : document.getElementById("description").value,
-        "stock" : document.getElementById("stock").value }
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState>3 && xhttp.status==200) {
@@ -120,7 +114,7 @@ function getMedicine(medicineId)
     };
     xhttp.open("POST", "/healthcentremanagement-front-end/api/medicine/getMedicine", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.send(JSON.stringify(medicine));
+    xhttp.send(JSON.stringify(medicineId));
 }
 
 function editMedicine(medicineId)

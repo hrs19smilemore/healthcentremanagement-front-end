@@ -27,149 +27,37 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="controller aangepast">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/healthcentremanagement_front_end_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/healthcentremanagement_front_end_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/restAPI_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/restAPI_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_8_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/JPAConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/MedicineController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PrescriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/IdentificationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/MedicineDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PatientDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PrescriptionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Identification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Medicine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Prescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/projections/MedicineProjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/projections/PatientProjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/projections/PrescriptionProjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/IdentificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/MedicineService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/MedicineRapport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/PatientInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/medicine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/medicineCrud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/medicineReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/patientCrud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/patientReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionCrud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/medicine.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/patient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/prescription.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/prescriptionsRapport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/restwithjersey_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/restwithjersey_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_3_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_6_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_3_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_6_1_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="9a468ed3-f8f7-430f-9b00-3be2d2c35a06" name="Default" comment="v2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/adapter/MedicineAndPatientListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/adapter/MedicineAndPatientListAdapterImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/builders/MedicineBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/DaoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/MedicineInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/PatientInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/interfaces/PrescriptionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/template/ConcretePrescriptionTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/template/PrescriptionTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restwithjersey.iml" beforeDir="false" afterPath="$PROJECT_DIR$/healthcentremanagement-front-end.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dto/BookDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sr/unasat/library/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sr/unasat/library/dto/BookDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sr/unasat/library/entity/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sr/unasat/library/service/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/dto/BookDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/entity/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/classes/sr/unasat/library/service/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-repackaged-2.4.0-b27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/cdi-api-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/el-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.2.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-5.2.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hk2-api-2.4.0-b27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hk2-locator-2.4.0-b27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/hk2-utils-2.4.0-b27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-base-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-json-provider-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-jaxb-annotations-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-2.4.0-b27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-common-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-core-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-entity-filtering-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-guava-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-jaxb-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-json-jackson-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-2.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/jsr250-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restwithjersey-1.0-SNAPSHOT/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-02-17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/TestResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/MedicineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/controller/PrescriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/IdentificationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/MedicineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/MedicineDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PatientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PrescriptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/dao/PrescriptionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/IdentificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/MedicineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/MedicineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sr/unasat/library/service/PrescriptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/medicineCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/medicineCrud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/patientCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/patientCrud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionCrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/prescriptionCrud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/patient.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -236,6 +126,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -254,7 +145,7 @@
       <recent name="C:\Users\dj\Desktop\restwithjersey\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.58">
+  <component name="RunManager" selected="Maven.library-api">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -309,12 +200,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="healthcentremanagement-front-end" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -555,7 +440,13 @@
       <option name="presentableId" value="Default" />
       <updated>1518229614966</updated>
       <workItem from="1614118657293" duration="2312000" />
-      <workItem from="1652037039536" duration="3581000" />
+      <workItem from="1652037039536" duration="3934000" />
+      <workItem from="1660525914566" duration="4999000" />
+      <workItem from="1660604399302" duration="5176000" />
+      <workItem from="1660863523866" duration="1491000" />
+      <workItem from="1660871795791" duration="11140000" />
+      <workItem from="1660909393601" duration="1481000" />
+      <workItem from="1660914237812" duration="14758000" />
     </task>
     <task id="LOCAL-00001" summary="controller aangepast">
       <created>1614119709100</created>
@@ -564,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614119709100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v2">
+      <created>1652040692198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652040692198</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +481,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="controller aangepast" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller aangepast" />
+    <MESSAGE value="v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2" />
   </component>
   <component name="masterDetails">
     <states>

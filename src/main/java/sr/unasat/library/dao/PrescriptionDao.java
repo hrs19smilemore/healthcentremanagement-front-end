@@ -1,6 +1,7 @@
 package sr.unasat.library.dao;
 
 import sr.unasat.library.JPAConfiguration;
+import sr.unasat.library.interfaces.DaoInterface;
 import sr.unasat.library.projections.PrescriptionProjection;
 import sr.unasat.library.entity.Medicine;
 import sr.unasat.library.entity.Patient;
@@ -11,7 +12,7 @@ import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class PrescriptionDao {
+public class PrescriptionDao implements DaoInterface<Prescription> {
     private EntityManager entityManager;
     MedicineDao medicineDao = new MedicineDao(JPAConfiguration.getEntityManager());
     PatientDao patientDao = new PatientDao(JPAConfiguration.getEntityManager());
@@ -20,7 +21,8 @@ public class PrescriptionDao {
         this.entityManager = entityManager;
     }
 
-    public List<Prescription> retrievePrescriptionList() {
+    @Override
+    public List<Prescription> retrieveList() {
         entityManager.getTransaction().begin();
         String jpql = "select p from Prescription p";
         TypedQuery<Prescription> query = entityManager.createQuery(jpql, Prescription.class);
@@ -29,27 +31,12 @@ public class PrescriptionDao {
         return prescriptionList;
     }
 
-    public Prescription insertOneRecord(Prescription prescription){
-        Medicine medicine = medicineDao.findStockByNameAndBrand(prescription.getMedicine().getName(), prescription.getMedicine().getBrand());
-        List<Patient> patients = patientDao.getPatientInfo(prescription.getPatient().getIdentification().getNumber());
+    @Override
+    public Prescription insert(Prescription prescription){
         entityManager.getTransaction().begin();
-        prescription.setMedicine(medicine);
-        prescription.setPatient(patients.get(0));
-        //Prescription p = new Prescription(prescription.getDose(), prescription.getPrescription_date(), patients.get(0), medicine);
         entityManager.persist(prescription);
         entityManager.getTransaction().commit();
         return prescription;
-    }
-
-    public List<Prescription> findPrescriptionByIdentification(Patient patient) {
-        entityManager.getTransaction().begin();
-        String jpql = "select pr from Prescription pr  join Patient  p on pr.patient.id = p.id" +
-                " where p.identification.number = :identification";
-        TypedQuery<Prescription> query = entityManager.createQuery(jpql, Prescription.class);
-        query.setParameter("identification", patient.getIdentification().getNumber());
-        List<Prescription> prescriptions = query.getResultList();
-        entityManager.getTransaction().commit();
-        return prescriptions;
     }
 
     public List<PrescriptionProjection> getPrescriptionsByYear(int year){
@@ -143,22 +130,20 @@ public class PrescriptionDao {
         return prescriptions;
     }
 
-    public int deleteOneRecord(Prescription prescription) {
+    @Override
+    public void delete(Prescription prescription) {
         entityManager.getTransaction().begin();
         Query query = entityManager.createQuery("delete from Prescription p" +
                 " where  p.prescriptionId = :id");
         query.setParameter("id", prescription.getPrescriptionId());
-        int rowsDeleted = query.executeUpdate();
+        query.executeUpdate();
         entityManager.getTransaction().commit();
-        return rowsDeleted;
     }
 
-    public void updatePrescriptionDose(Prescription prescription) {
+    @Override
+    public void update(Prescription prescription) {
         entityManager.getTransaction().begin();
         Query query = entityManager.createQuery("UPDATE Prescription p SET p.dose = :dose where p.prescriptionId = :id");
-        //query.setParameter("brand", prescription.getMedicine().getBrand());
-        //query.setParameter("name", prescription.getMedicine().getName());
-        //query.setParameter("date", prescription.getPrescription_date());
         query.setParameter("dose", prescription.getDose());
         query.setParameter("id", prescription.getPrescriptionId());
         query.executeUpdate();

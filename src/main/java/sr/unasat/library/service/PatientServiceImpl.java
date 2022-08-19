@@ -2,22 +2,25 @@ package sr.unasat.library.service;
 
 import sr.unasat.library.JPAConfiguration;
 import sr.unasat.library.dao.PatientDao;
-import sr.unasat.library.entity.Medicine;
 import sr.unasat.library.entity.Patient;
+import sr.unasat.library.interfaces.PatientInterface;
 
 import java.util.List;
 
-public class PatientService {
+public class PatientServiceImpl implements PatientInterface {
     PatientDao patientDao = new PatientDao(JPAConfiguration.getEntityManager());
 
+    @Override
     public List<Patient> getAllPatients(){
-        return patientDao.retrievePatientList();
+        return patientDao.retrieveList();
     }
 
+    @Override
     public Patient insertPatient(Patient patient){
-        return patientDao.insertOneRecord(patient);
+        return patientDao.insert(patient);
     }
 
+    @Override
     public Patient deletePatient(Patient patient) {
         int index = -1;
 
@@ -31,11 +34,12 @@ public class PatientService {
         patientTemp = getAllPatients().get(index);
 
 
-        patientDao.deleteOneRecord(patient);
+        patientDao.delete(patient);
         return patientTemp;
 
     }
 
+    @Override
     public Patient findPatient(Patient patient) {
         Patient foundPatient = new Patient(patient.getId());
         for (int i = 0; i < getAllPatients().size(); i++){
@@ -47,14 +51,16 @@ public class PatientService {
         return foundPatient;
     }
 
+    @Override
     public List<Patient> getAllPatientInfo(String patientId) {
         return patientDao.getPatientInfo(patientId);
     }
 
+    @Override
     public Patient updatePatient(Patient patient) {
         for (int i = 0; i < getAllPatients().size(); i++) {
             if (getAllPatients().get(i).getId() == patient.getId()) {
-                patientDao.updatePatient(patient);
+                patientDao.update(patient);
                 break;
             }
         }
